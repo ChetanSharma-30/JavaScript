@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Array</title>
+</head>
+<body>
+    <div class="array">hello</div>
+    <div class="array">hello</div>
+    <div class="array">hello</div>
+    <div class="array">hello</div>
+</body>
+</html>
+<script>
+
+    // Loops In Array 
+
+    let num = [1, 2, 3, 4, 5]
+  
+    // 1. using for loop 
+
+    // for (let i = 0; i < num.length; i++) {
+    //     console.log(i);        
+    // }
+
+    // 2. using for each loop
+
+    // => calls a function, once for each array element 
+
+    // num.forEach(element => {
+    //     console.log(element * element);
+    // });
+
+    // 3. Array from 
+
+    // => used to create an array from any other object
+
+    // let a = document.getElementsByClassName("array")
+    // // console.log(typeof a);
+    // Array.from(a)
+    // console.log(a);
+
+    // let name = "Chetan";
+    // let arr = Array.from(name);
+    // console.log(arr);
+
+
+    // 4. for of loop
+
+    // for (let i of num) {
+    //     console.log(i);
+    // }
+
+
+    // 5. for in loop
+
+    for (let i in num) {
+        console.log(i);
+    }
+</script>

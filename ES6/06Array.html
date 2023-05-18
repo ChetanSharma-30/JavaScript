@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Array in js 
+
+    // Arrays are mutable they can be changed
+
+    // let marks = [61, 72, 83, 94, null, false, "Not present"];
+    // console.log(marks);
+    // console.log(marks[0]);
+    // console.log(marks[1]);
+    // console.log(marks[6]);
+    // console.log(marks.length);
+    // marks[7] = 55;      // Adding a new value to an array
+    // marks[0] = 98;      // Changing a value to an array
+    // console.log(marks[7]);
+    // console.log(marks[0]);
+    // console.log(typeof marks);
+
+
+    // Methods of Array 
+
+    // 1. toString()
+
+    // let num = [1, 2, 3, 4];
+    // let b = num.toString()   // converts it into string
+    // console.log(b, typeof b);
+
+    // 2. join()
+
+    // let num = [1, 2, 3, 4];
+    // let c = num.join("_");
+    // console.log(c, typeof c);
+
+
+    // 3. pop()
+
+    // let num = [1, 2, 3, 4];
+    // let c = num.pop();  // pop returns the popped element
+    // // num.pop()
+    // console.log(num, c);
+
+
+    // 4. push()
+
+    // let num = [1, 2, 3, 4];
+    // let c = num.push(5);  // push returns the new array
+    // console.log(num, c);
+
+
+     // 5. shift()
+
+    //  let num = [1, 2, 3, 4];
+    // let c = num.shift();  // Remove the element from the start of an array
+    // console.log(c, num);
+
+
+    // 6. unshift()
+
+    // let num = [1, 2, 3, 4];
+    // let c = num.unshift(6);  // Add an element to start of an array
+    // console.log(c, num);
+
+
+    // 7. delete()
+
+    // Delete is not a method it is an operator
+
+    // let num = [1, 2, 3, 4, 5, 6, 7, 8];
+    // delete num[0]
+    // console.log(num);
+
+
+    // 8. concat()
+
+    // Return a new array , does not change the existing array
+
+    // let num = [1, 2, 3, 4, 5, 6, 7, 8];
+    // let num_more = [11, 21, 13, 41, 51, 16, 71, 18];
+    // let num_even_more = [112, 212, 132, 421, 512, 162, 721, 128];
+    // // let new_array = num.concat(num_more)
+    // let new_array = num.concat(num_more, num_even_more)
+    // console.log(new_array);
+
+    // 9. sort()
+
+    // modify the original array
+
+    // let compare = (a, b) =>{
+    //     // return a - b       // Ascending order
+    //     return b - a    //   Descending order
+    // }
+    // let num = [222, 5, 56, 7, 259, 1];
+    // num.sort(compare)
+    // console.log(num);
+
+
+    // 10. reverse()
+
+    // let num = [1, 2, 3, 4, 5];
+    // num.reverse()
+    // console.log(num);
+
+
+    // 11. splice()
+
+    // let num = [1, 2, 3, 4, 5, 6, 7];
+    // let deletedArray = num.splice(2, 3, 1011, 1012, 1013, 1014)
+    // console.log(num);
+    // console.log(deletedArray);
+
+
+    // 11. slice()
+
+    let num = [1, 2, 3, 4, 5];
+    // let newArray = num.slice(2)
+    let newArray = num.slice(2, 4)
+    console.log(newArray);
+</script>

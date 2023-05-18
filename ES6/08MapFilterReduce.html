@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heigher Order Method Of Array</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    // Heigher Order Method Of Array
+
+    // 1. map()
+
+    // => Creates a new array by performing some operation on each array element
+
+    // let arr = [45, 55, 65];
+    // let a = arr.map( (value) =>{
+    //     console.log(value);
+    //     return value + 1
+    // })
+    // console.log(a);
+
+
+    // 2. filter()
+
+    // => filter an array with values that passes a test. creates a new array
+
+    // let arr = [45, 55, 65, 4, 3, 2];
+    // let newArray = arr.filter( (a)=>{
+    //     return a<10
+    // })
+    // console.log(newArray);
+
+
+    // 3. reduce()
+
+    // => reduce an array to a single value
+
+    // let arr = [1, 2, 3, 4, 5, 6];
+    // console.log(arr);
+    // let newArray = arr.reduce((kuchbhi, koibhi)=>{
+    //     return kuchbhi + koibhi
+    // })
+    // console.log(newArray);
+
+
+
+    // we can also write this as below
+
+    let arr = [1, 2, 3, 4, 5, 6];
+    console.log(arr);
+    const reduc_func = (kuchbhi, koibhi)=>{
+        return kuchbhi + koibhi
+    }
+    let newArray = arr.reduce(reduc_func)
+    console.log(newArray);
+</script>
