@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+
+    // Synchronous Progaramming
+
+
+    // let a = prompt("What is your name?")
+    // let b = prompt("What is your age?")
+    // let c = prompt("What is your fav. color?")
+    // console.log(a + " is " + b + " years old and has " + c + " fav.color");
+
+
+    // Asynchronous Programming
+
+    // console.log("Good Morning");
+    // setTimeout(function (){
+    //     console.log("Good Evening");
+    // }, 3000)
+    // console.log("Good Afternoon");
+
+
+    // Callback
+
+    // => A callback function is a function passed into another function argument , 
+    //   which is then invoked inside the outer function to complete an action.
+
+    function loadScript(src){
+        var script = document.createElement("script");
+        script.src = src;
+        script.onload = function (){
+            console.log("Script loaded with src: " + src);   
+        }
+        document.body.appendChild(script);
+    }
+
+    loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js")
+
+</script>
